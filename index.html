@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Javascript form validation</title>
+  </head>
+  <body>
+    <div>
+      <h1>Javascript form validation</h1>
+
+      <form
+        action="/myaction.php"
+        name="myForm"
+        onsubmit="return validateForm()"
+      >
+        <div class="formdesign" id="name">
+          Name:
+          <input type="text" id="fname" name="fname" placeholder="Enter Name" />
+          <span class="formerror"> <b></b></span>
+        </div>
+        <div class="formdesign" id="email">
+          Email:
+          <input
+            type="email"
+            id="femail"
+            name="femail"
+            placeholder="Enter Email"
+          />
+          <span class="formerror"> <b></b></span>
+        </div>
+        <div class="formdesign" id="phone">
+          Phone:
+          <input
+            type="phone"
+            id="fphone"
+            name="fphone"
+            placeholder="Enter Phone Number"
+          />
+          <span class="formerror"> <b></b></span>
+        </div>
+        <div class="formdesign" id="pass">
+          Password:
+          <input
+            type="password"
+            id="fpass"
+            name="fpass"
+            placeholder="Enter Password"
+          />
+          <span class="formerror"> <b></b></span>
+        </div>
+        <div class="formdesign" id="cpass">
+          Confirm Password:
+          <input
+            type="password"
+            id="fcpass"
+            name="fcpass"
+            placeholder="Confirm Password"
+          />
+          <span class="formerror"> <b></b></span>
+        </div>
+
+        <div class="button-container">
+          <input type="submit" class="button" value="SUBMIT" />
+          <button type="button" class="btnclear" id="clearBtn">CLEAR</button>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
